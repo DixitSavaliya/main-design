@@ -225,7 +225,7 @@
 		</div>
 		<div class="mdc-layout-grid__cell--span-1">
 		</div>
-		<div class="mdc-layout-grid__cell--span-7">
+		<div class="mdc-layout-grid__cell--span-6">
 			<h3 style="text-align: left;">About Us</h3>
 			<p>Virat Kohli was born on 5 November 1988 in Delhi into a Punjabi Hindu family. His father, Prem Kohli, worked as a criminal lawyer and his mother, Saroj Kohli, is a housewife. He has an older brother, Vikas, and an older sister, Bhavna. According to his family, when he was three-years old, Kohli would pick up a cricket bat, start swinging it and ask his father to bowl at him.</p>
 			<p>Kohli was raised in Uttam Nagar and started his schooling at Vishal Bharti Public School. In 1998, the West Delhi Cricket Academy was created, and Kohli, a nine-year-old, was part of its first intake. Kohli's father took him to the academy after their neighbours suggested that "Virat shouldn't waste his time in gully cricket and instead join a professional club". Kohli trained at the academy under Rajkumar Sharma and also played matches at the Sumeet Dogra Academy at Vasundhara Enclave at the same time. Sharma recounts Kohli's early days at his academy, "He oozed talent. It was so difficult to keep him quiet. He was a natural in whatever he did and I was most impressed with his attitude.</p>
@@ -233,6 +233,8 @@
 			<button class="mdc-button--raised" style="height: 40px;margin-bottom: 30px;">
 				<span class="mdc-button__label" style="text-shadow: 1px 1px;">Read More </span>
 			</button>
+		</div>
+		<div class="mdc-layout-grid__cell--span-1">
 		</div>
 
 	</div>
@@ -374,8 +376,8 @@
 
 						</div>
 						<div class="mdc-layout-grid__cell--span-4">
-							<div class=card-1">
-								<label>(3N/4D)</label>
+							<div class=card-1" style="border: 1px solid lightgray;">
+								<label style="padding-left: 236px;">(3N/4D)</label>
 								<h3 class="card_txt2">Rs.6800</h3>
 								<p class="mdc-typography--caption">Per Person</p>
 								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
@@ -445,7 +447,7 @@
 					</div>
 
 				</div>
-				<
+				
 				<div class="mdc-layout-grid tab_section">
 					<div class="mdc-layout-grid__inner">
 						<div class="mdc-layout-grid__cell--span-4">
@@ -497,16 +499,52 @@
 		</div>
 	</div>
 </div>
+
 <div class="mdc-layout-grid" style="margin-top: 80px;">
 	<div class="mdc-layout-grid__inner">
 		<div class="mdc-layout-grid__cell--span-3"></div>
 		<div class="mdc-layout-grid__cell--span-7">
+			<div class="mdc-slider" tabindex="0" role="slider"
+			aria-valuemin="-5" aria-valuemax="50" aria-valuenow="10"
+			aria-label="Select Value">
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+					<div class="numbertext">1 / 3</div>
+					<img src="images/t1.jpg" style="width:100%">
+					<div class="text">Caption Text</div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">2 / 3</div>
+					<img src="images/t2.jpg" style="width:100%">
+					<div class="text">Caption Two</div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">3 / 3</div>
+					<img src="images/t3.jpg" style="width:100%">
+					<div class="text">Caption Three</div>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
 		</div>
-		<div class="mdc-layout-grid__cell--span-2"></div>
 	</div>
+	<div class="mdc-layout-grid__cell--span-2"></div>
+</div>
 </div>
 
-<div class="mdc-layout-grid footer">
+<div class="mdc-layout-grid footer" style="margin-top: 435px;">
 	<div class="mdc-layout-grid__inner">
 		<div class="mdc-layout-grid__cell--span-2">
 
@@ -515,7 +553,7 @@
 
 			<p class="mdc-typography--headline6 footer_about">ABOUT US</p>
 			<p class="f_about_p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as </p>
-			<!-- <i class="mdc-tab__icon material-icons" aria-hidden="true">map-marker-multiple</i> -->
+			
 			<div class="mdc-layout-grid__inner">
 				<div class="mdc-layout-grid__cell--span-2">
 					<img src="images/map-marker.png" class="f_img">
