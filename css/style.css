@@ -109,12 +109,12 @@ h1 {
   .sec4{
     background-color: #3e8ac4;
   }
-  .search input[type=text]{
+  .search input[type=text] {
     width: 50%;
-    /*height:200px;*/
     padding: 10px;
     margin: 20px;
-
+    border: 1px;
+    border-radius: 9px;
   }
   .mdc-layout-grid {
     box-sizing: border-box;
@@ -268,61 +268,73 @@ h1 {
     margin-top: 80px;
     padding: 35px;
   }
-  .holyday {
+  .card-1 {
     /*background-color:lightgray;*/
     border:1px solid lightgray;
   }
-  .holyday label{
+  .card-1 label{
     margin-left: 235px;
     margin-top: 10px;
   }
 
-  
+
   .mdc-typography--caption ,h3 , label{
     text-align: center;
   }
-  .holyday_txt1{
+  .card_txt1{
     color:#6c4c95;
   }
-  .holyday_btn1{
+  .card_btn1{
     margin-bottom:15px;
     background-color: #6c4c95;
+    color: white;
+    text-shadow: 1px 1px;
   }
-  .holyday_txt2{
+  .card_txt2{
     color:#d7383c;
   }
-  .holyday_btn2{
+  .card_btn2{
     margin-bottom:15px;
     background-color: #d7383c;
+    color: white;
+    text-shadow: 1px 1px;
   }
-  .holyday_txt3{
+  .card_txt3{
     color:#153b86;
   }
-  .holyday_btn3{
+  .card_btn3{
     margin-bottom:15px;
     background-color: #153b86;
+    color: white;
+    text-shadow: 1px 1px;
   }
-  .holyday_txt4{
+  .card_txt4{
     color:#a31a46;
   }
-  .holyday_btn4{
+  .card_btn4{
     margin-bottom:15px;
     background-color: #a31a46;
+    color: white;
+    text-shadow: 1px 1px;
   }
-  .holyday_txt5{
+  .card_txt5{
     color:#ebaf41;
   }
-  .holyday_btn5{
+  .card_btn5{
     margin-bottom:15px;
     background-color: #ebaf41;
     background-image: linear-gradient(#f5e67b,#e6a02a);
+    color: white;
+    text-shadow: 1px 1px;
   }
-  .holyday_txt6{
+  .card_txt6{
     color:#2d87c3;
   }
-  .holyday_btn6{
+  .card_btn6{
     margin-bottom:15px;
     background-color: #2d87c3;
+    color: white;
+    text-shadow: 1px 1px;
   }
   .tab_section{
     padding-right: 20px;
@@ -368,44 +380,4 @@ h1 {
 
     background-color: #f3f3f3;
   }
-  @font-face {
-    font-family: 'work_sansblack';
-    src: url('worksans-black-webfont.eot');
-    src: url('worksans-black-webfont.eot?#iefix') format('embedded-opentype'),
-    url('worksans-black-webfont.woff2') format('woff2'),
-    url('worksans-black-webfont.woff') format('woff'),
-    url('worksans-black-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-  }
-
-
-
-
-  @font-face {
-    font-family: 'work_sansbold';
-    src: url('worksans-bold-webfont.eot');
-    src: url('worksans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('worksans-bold-webfont.woff2') format('woff2'),
-    url('worksans-bold-webfont.woff') format('woff'),
-    url('worksans-bold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-  }
-
-
-
-
-  @font-face {
-    font-family: 'work_sansregular';
-    src: url('worksans-regular-webfont.eot');
-    src: url('worksans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('worksans-regular-webfont.woff2') format('woff2'),
-    url('worksans-regular-webfont.woff') format('woff'),
-    url('worksans-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-  }
+  

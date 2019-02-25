@@ -16,15 +16,35 @@
 			<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
 				<ul class="mdc-list list1">
 					<li class="mdc-list-item" tabindex="0">
-						<span class="mdc-list-item__text call">Call 1800 22 7979</span>
+						<span class="mdc-list-item__text call"><a href="tel:1800227979" style="color: white;">Call 1800 22 7979</a></span>
 					</li>
 					<li class="mdc-list-item">
 						<span class="mdc-list-item__text">Select Currency:</span>
 					</li>
-					<li><button class="mdc-button currency">
+					<li>
+						<div class="mdc-select" style="    width: 75px;
+						padding: 4px;">
+						<i class="mdc-select__dropdown-icon"></i>
+						<select class="mdc-select__native-control" >
+							<option value="" disabled selected></option>
+							<option value="grains">
+								RUPPES
+							</option>
+							<option value="vegetables">
+								POUNDS
+							</option>
+							<option value="fruit">
+								DOLLARS
+							</option>
+						</select>
+						<label class="mdc-floating-label">INR</label>
+						<div class="mdc-line-ripple"></div>
+					</div>
+				</li>
+					<!-- <li><button class="mdc-button currency">
 						<span class="mdc-button__label">inr</span>
 						<i class="material-icons mdc-button__icon" aria-hidden="true">favorite</i>
-					</button></li>
+					</button></li> -->
 					
 				</ul>
 			</section>
@@ -76,7 +96,7 @@
 			<div class="mdc-layout-grid__cell--span-8">
 				<section class="search">
 					<center><input type="text" name="search" placeholder="Where would you like to go?">
-						<button class="mdc-button sign1">
+						<button class="mdc-button sign1" style="padding: 11px;border: 1px;border-radius: 13px;">
 							<span class="mdc-button__label">Let's Go</span>
 						</button>
 					</center>
@@ -210,8 +230,8 @@
 			<p>Virat Kohli was born on 5 November 1988 in Delhi into a Punjabi Hindu family. His father, Prem Kohli, worked as a criminal lawyer and his mother, Saroj Kohli, is a housewife. He has an older brother, Vikas, and an older sister, Bhavna. According to his family, when he was three-years old, Kohli would pick up a cricket bat, start swinging it and ask his father to bowl at him.</p>
 			<p>Kohli was raised in Uttam Nagar and started his schooling at Vishal Bharti Public School. In 1998, the West Delhi Cricket Academy was created, and Kohli, a nine-year-old, was part of its first intake. Kohli's father took him to the academy after their neighbours suggested that "Virat shouldn't waste his time in gully cricket and instead join a professional club". Kohli trained at the academy under Rajkumar Sharma and also played matches at the Sumeet Dogra Academy at Vasundhara Enclave at the same time. Sharma recounts Kohli's early days at his academy, "He oozed talent. It was so difficult to keep him quiet. He was a natural in whatever he did and I was most impressed with his attitude.</p>
 
-			<button class="mdc-button--raised" style="height: 40px;">
-				<span class="mdc-button__label">Read More </span>
+			<button class="mdc-button--raised" style="height: 40px;margin-bottom: 30px;">
+				<span class="mdc-button__label" style="text-shadow: 1px 1px;">Read More </span>
 			</button>
 		</div>
 
@@ -319,7 +339,7 @@
 </div>
 <div class="boot">
 	<div class="mdc-layout-grid" style="margin-top: 80px;">
-		<div class="mdc-layout-grid__inner">
+		<div class="mdc-layout-grid__inner" style="margin-bottom: 15px;">
 			<div class="mdc-layout-grid__cell--span-4">
 				
 			</div>
@@ -329,49 +349,49 @@
 			</div>
 		</div>
 	</div>
-	<div class="mdc-layout-grid">
+	<div class="mdc-layout-grid" style="margin-bottom: 15px;">
 		<div class="mdc-layout-grid__inner">
 			<div class="mdc-layout-grid__cell--span-1">
 			</div>
 			<div class="mdc-layout-grid__cell--span-2">
 				<div class="mdc-image-list__image-aspect-container">
-					<img class="mdc-image-list__image" src="images/tab.png" style="height: 650px;">
+					<img class="mdc-image-list__image" src="images/tab.png" style="height: 643px;">
 				</div>
 			</div>
 			<div class="mdc-layout-grid__cell--span-9">
 				<div class="mdc-layout-grid tab_section">
 					<div class="mdc-layout-grid__inner">
 						<div class="mdc-layout-grid__cell--span-4">
-							<div class="holyday">
+							<div class="card-1">
 								<label>(3N/4D)</label>
-								<h3 class="holyday_txt1">Rs.6800</h3>
+								<h3 class="card_txt1">Rs.6800</h3>
 								<p class="mdc-typography--caption">Per Person</p>
 								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button--dense holyday_btn1">
+								<center><button class="mdc-button--dense card_btn1">
 									<span class="mdc-button__label ">VIEW MORE</span>
 								</button></center>
 							</div>
 
 						</div>
 						<div class="mdc-layout-grid__cell--span-4">
-							<div class="holyday">
+							<div class=card-1">
 								<label>(3N/4D)</label>
-								<h3 class="holyday_txt2">Rs.6800</h3>
+								<h3 class="card_txt2">Rs.6800</h3>
 								<p class="mdc-typography--caption">Per Person</p>
 								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button--dense holyday_btn2">
+								<center><button class="mdc-button--dense card_btn2">
 									<span class="mdc-button__label ">VIEW MORE</span>
 								</button></center>
 							</div>
 
 						</div>
 						<div class="mdc-layout-grid__cell--span-4">
-							<div class="holyday">
+							<div class="card-1">
 								<label>(3N/4D)</label>
-								<h3 class="holyday_txt3">Rs.6800</h3>
+								<h3 class="card_txt3">Rs.6800</h3>
 								<p class="mdc-typography--caption">Per Person</p>
 								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button--dense holyday_btn3">
+								<center><button class="mdc-button--dense card_btn3">
 									<span class="mdc-button__label ">VIEW MORE</span>
 								</button></center>
 							</div>
@@ -385,36 +405,36 @@
 				<div class="mdc-layout-grid tab_section">
 					<div class="mdc-layout-grid__inner">
 						<div class="mdc-layout-grid__cell--span-4">
-							<div class="holyday">
+							<div class="card-1">
 								<label>(3N/4D)</label>
-								<h3 class="holyday_txt4">Rs.6800</h3>
+								<h3 class="card_txt4">Rs.6800</h3>
 								<p class="mdc-typography--caption">Per Person</p>
 								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button--dense holyday_btn4">
+								<center><button class="mdc-button--dense card_btn4">
 									<span class="mdc-button__label ">VIEW MORE</span>
 								</button></center>
 							</div>
 
 						</div>
 						<div class="mdc-layout-grid__cell--span-4">
-							<div class="holyday">
+							<div class="card-1">
 								<label>(3N/4D)</label>
-								<h3 class="holyday_txt5">Rs.6800</h3>
+								<h3 class="card_txt5">Rs.6800</h3>
 								<p class="mdc-typography--caption">Per Person</p>
 								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button--dense holyday_btn5">
+								<center><button class="mdc-button--dense card_btn5">
 									<span class="mdc-button__label ">VIEW MORE</span>
 								</button></center>
 							</div>
 
 						</div>
 						<div class="mdc-layout-grid__cell--span-4">
-							<div class="holyday">
+							<div class="card-1">
 								<label>(3N/4D)</label>
-								<h3 class="holyday_txt6">Rs.6800</h3>
+								<h3 class="card_txt6">Rs.6800</h3>
 								<p class="mdc-typography--caption">Per Person</p>
 								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button--dense holyday_btn6">
+								<center><button class="mdc-button--dense card_btn6">
 									<span class="mdc-button__label ">VIEW MORE</span>
 								</button></center>
 							</div>
@@ -429,36 +449,35 @@
 				<div class="mdc-layout-grid tab_section">
 					<div class="mdc-layout-grid__inner">
 						<div class="mdc-layout-grid__cell--span-4">
-							<div class="holyday">
+							<div class="card-1">
 								<label>(3N/4D)</label>
-								<h3 class="holyday_txt1">Rs.6800</h3>
+								<h3 class="card_txt1">Rs.6800</h3>
 								<p class="mdc-typography--caption">Per Person</p>
 								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button--dense holyday_btn1">
+								<center><button class="mdc-button--dense card_btn1">
 									<span class="mdc-button__label ">VIEW MORE</span>
 								</button></center>
 							</div>
 
 						</div>
 						<div class="mdc-layout-grid__cell--span-4">
-							<div class="holyday">
+							<div class="card-1">
 								<label>(3N/4D)</label>
-								<h3 class="holyday_txt2">Rs.6800</h3>
+								<h3 class="card_txt2">Rs.6800</h3>
 								<p class="mdc-typography--caption">Per Person</p>
 								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button--dense holyday_btn2">
+								<center><button class="mdc-button--dense card_btn2">
 									<span class="mdc-button__label ">VIEW MORE</span>
 								</button></center>
 							</div>
 
 						</div>
 						<div class="mdc-layout-grid__cell--span-4">
-							<div class="holyday">
+							<div class="card-1">
 								<label>(3N/4D)</label>
-								<h3 class="holyday_txt3"e>Rs.6800</h3>
+								<h3 class="card_txt3"e>Rs.6800</h3>
 								<p class="mdc-typography--caption">Per Person</p>
-								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
-								<center><button class="mdc-button--dense holyday_btn3">
+								<p style="text-align: center;">Bali 4 Star Package for 4 Days</p>			<center><button class="mdc-button--dense card_btn3">
 									<span class="mdc-button__label ">VIEW MORE</span>
 								</button></center>
 							</div>
@@ -478,14 +497,22 @@
 		</div>
 	</div>
 </div>
+<div class="mdc-layout-grid" style="margin-top: 80px;">
+	<div class="mdc-layout-grid__inner">
+		<div class="mdc-layout-grid__cell--span-3"></div>
+		<div class="mdc-layout-grid__cell--span-7">
+		</div>
+		<div class="mdc-layout-grid__cell--span-2"></div>
+	</div>
+</div>
 
 <div class="mdc-layout-grid footer">
 	<div class="mdc-layout-grid__inner">
 		<div class="mdc-layout-grid__cell--span-2">
-			
+
 		</div>
 		<div class="mdc-layout-grid__cell--span-3">
-			
+
 			<p class="mdc-typography--headline6 footer_about">ABOUT US</p>
 			<p class="f_about_p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as </p>
 			<!-- <i class="mdc-tab__icon material-icons" aria-hidden="true">map-marker-multiple</i> -->
@@ -500,7 +527,7 @@
 					Postcodes: 5022.</p>
 				</div>	
 			</div>	
-			
+
 
 		</div>
 		<div class="mdc-layout-grid__cell--span-1"></div>
@@ -533,7 +560,7 @@
 					<p class="f_about_p"><label class="f_title1">></label> New York</p>
 					<p class="f_about_p"><label class="f_title1">></label> Orlando</p>
 
-					
+
 				</div>
 				<div class="mdc-layout-grid__cell--span-2  f_margin">
 					<p class="mdc-typography--subtitle f_title3">USA</p>
@@ -544,7 +571,7 @@
 					<p class="f_about_p"><label class="f_title3">></label> Switserland</p>
 					<p class="f_about_p"><label class="f_title3">></label> France</p>
 
-					
+
 				</div>
 				<div class="mdc-layout-grid__cell--span-2  f_margin">
 					<p class="mdc-typography--subtitle f_title4">FAR EAST</p>
@@ -569,10 +596,10 @@
 					<p class="mdc-typography--subtitle f_title6">MIDDLE EAST</p>
 					<p class="f_about_p"><label class="f_title6">></label> Russia</p>
 					<p class="f_about_p"><label class="f_title6">></label> Spain</p>
-					
+
 
 				</div>
-				
+
 			</div>
 		</div>
 	</div>
@@ -580,11 +607,11 @@
 	<div class="mdc-layout-grid__inner footer_bottom">
 		<div class="mdc-layout-grid__cell--span-12">
 			<center><p>@ 2018 TMG.All Rights Reserved</p></center>
-			
+
 		</div>
-		
+
 	</div>
-	
+
 </div>
 
 
