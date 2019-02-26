@@ -49,74 +49,163 @@
 				</ul>
 			</section>
 			<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-				<button class="mdc-button sign" style="margin-top: -60px;">
+				<button id="sign" class="mdc-button sign" style="margin-top: -60px;margin-left: 450px;">
 					<span class="mdc-button__label">Sign In</span>
 				</button>
-				<button class="mdc-button register" style="margin-top: -60px;">
-					<span class="mdc-button__label">Register</span>
-				</button>
-			</section>
-		</div>
-	</header>
-	<div class="mdc-layout-grid sec3">
-		<div class="mdc-layout-grid__inner">
-			<div class="mdc-layout-grid__cell--span-3">
-				<img class="logo" src="images/1.png"/>
+				<div class="mdc-dialog"
+				role="alertdialog"
+				aria-modal="true"
+				aria-labelledby="my-dialog-title"
+				aria-describedby="my-dialog-content">
+				<div class="mdc-dialog__container">
+					<div class="mdc-dialog__surface">
+
+						<h2 class="mdc-dialog__title" id="my-dialog-title">
+							Sign In
+						</h2>
+						<div class="mdc-dialog__content" id="my-dialog-content">
+							<div class="mdc-text-field email">
+								<input type="text" id="email" class="mdc-text-field__input" >
+								<label class="mdc-floating-label" for="my-text-field">EMAIL</label>
+								<div class="mdc-line-ripple"></div>
+							</div>
+							<div class="mdc-text-field password">
+								<input type="text" id="password" class="mdc-text-field__input">
+								<label class="mdc-floating-label" for="my-text-field">PASSWORD</label>
+								<div class="mdc-line-ripple"></div>
+							</div>
+							<button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no" ">
+								<span class="mdc-button__label" style="color: #2196f3;">Cancel</span>
+							</button>
+							<button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes" id="sign" >
+								<span class="mdc-button__label" id="submit" style="color: #2196f3;">Submit</span>
+							</button>
+						</div>
+						<!-- <footer class="mdc-dialog__actions">
+							<button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+								<span class="mdc-button__label">No</span>
+							</button>
+							<button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes">
+								<span class="mdc-button__label">Yes</span>
+							</button>
+						</footer> -->
+					</div>
+				</div>
+				<div class="mdc-dialog__scrim"></div>
 			</div>
-			<div class="mdc-layout-grid__cell--span-9 ">
-				<ul class="mdc-list l1">
-					<li class="mdc-list-item ">
-						<span class="mdc-list-item__text">Inernational Tours</span>
-					</li>
-					<li class="mdc-list-item">
-						<span class="mdc-list-item__text">Inernational Tours</span>
-					</li>
-					<li class="mdc-list-item ">
-						<span class="mdc-list-item__text">India Tour</span>
-					</li>
-					<li class="mdc-list-item ">
-						<span class="mdc-list-item__text">Speciallity Tour</span>
-					</li>
-					<li class="mdc-list-item ">
-						<span class="mdc-list-item__text">Place to visit</span>
-					</li>
-					<li class="mdc-list-item ">
-						<span class="mdc-list-item__text">Blogs</span>
-					</li>
-					<li class="mdc-list-item ">
-						<span class="mdc-list-item__text">Contact</span>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="mdc-layout-grid">
-		<div class="mdc-layout-grid__inner sec4">
-			<div class="mdc-layout-grid__cell--span-2"></div>
-			<div class="mdc-layout-grid__cell--span-8">
-				<section class="search">
-					<center><input type="text" name="search" placeholder="Where would you like to go?">
-						<button class="mdc-button sign1" style="padding: 11px;border: 1px;border-radius: 13px;">
-							<span class="mdc-button__label">Let's Go</span>
-						</button>
-					</center>
-				</section>
-				<div class="mdc-layout-grid__cell--span-2"></div>
-			</div>
-		</div>
-	</div>
-	<div class="bgimg">
-		<div class="content">
-			<div class="mdc-layout-grid">
-				<div class="mdc-layout-grid__inner">
-					<div class="mdc-layout-grid__cell" style="margin-top: 89px;
-					margin-left: 200px;">
-					<h1 class="mdc-typography--headline4" style="font-family: 'work_sansblack';">Summer Offers</h1>
-					<p class="mdc-typography--subtitle2">Lorem ipsum dolor sit amet, ex dicam definitiones cum. Falli decore quaeque eu est. Has ad salutatus deseruisse, sit fuisset democritum delicatissimi id. Id probo veniam honestatis vel. Mel modus imperdiet gubergren in, eam at inani doctus repudiandae. Ad per eros solum appetere.</p>
+
+			<button id="reg" class="mdc-button register" style="margin-top: -60px;">
+				<span class="mdc-button__label">Register</span>
+			</button>
+			<div class="mdc-dialog dialog2"
+			role="alertdialog"
+			aria-modal="true"
+			aria-labelledby="my-dialog-title"
+			aria-describedby="my-dialog-content">
+			<div class="mdc-dialog__container">
+				<div class="mdc-dialog__surface">
+					<h2 class="mdc-dialog__title" id="my-dialog-title">SIGN UP</h2>
+					<div class="mdc-dialog__content" id="my-dialog-content">
+						<div class="mdc-text-field firstname">
+							<input type="text" id="firstname" class="mdc-text-field__input">
+							<label class="mdc-floating-label" for="my-text-field">Firstname</label>
+							<div class="mdc-line-ripple"></div>
+						</div>
+						<div class="mdc-text-field lastname">
+							<input type="text" id="lastname" class="mdc-text-field__input">
+							<label class="mdc-floating-label" for="my-text-field">Lastname</label>
+							<div class="mdc-line-ripple"></div>
+						</div>
+						<div class="mdc-text-field email1">
+							<input type="text" id="email1" class="mdc-text-field__input">
+							<label class="mdc-floating-label" for="my-text-field">EMAIL</label>
+							<div class="mdc-line-ripple"></div>
+						</div>
+						<div class="mdc-text-field password1">
+							<input type="text" id="password1" class="mdc-text-field__input">
+							<label class="mdc-floating-label" for="my-text-field">PASSWORD</label>
+							<div class="mdc-line-ripple"></div>
+						</div>
+
+					<button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no" ">
+						<span class="mdc-button__label" style="color: #2196f3;">Cancel</span>
+					</button>
+					<button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes" id="sign" >
+						<span class="mdc-button__label" id="submitt" style="color: #2196f3;">Submit</span>
+					</button>
+					</div>
+					
+					
 				</div>
 			</div>
+			<div class="mdc-dialog__scrim"></div>
+		</div>
+	</section>
+</div>
+</header>
+<div class="mdc-layout-grid sec3">
+	<div class="mdc-layout-grid__inner">
+		<div class="mdc-layout-grid__cell--span-3">
+			<img class="logo" src="images/1.png"/>
+		</div>
+		<div class="mdc-layout-grid__cell--span-9 ">
+			<ul class="mdc-list l1">
+				<li class="mdc-list-item ">
+					<span class="mdc-list-item__text">Inernational Tours</span>
+				</li>
+				<li class="mdc-list-item">
+					<span class="mdc-list-item__text">Inernational Tours</span>
+				</li>
+				<li class="mdc-list-item ">
+					<span class="mdc-list-item__text">India Tour</span>
+				</li>
+				<li class="mdc-list-item ">
+					<span class="mdc-list-item__text">Speciallity Tour</span>
+				</li>
+				<li class="mdc-list-item ">
+					<span class="mdc-list-item__text">Place to visit</span>
+				</li>
+				<li class="mdc-list-item ">
+					<span class="mdc-list-item__text">Blogs</span>
+				</li>
+				<li class="mdc-list-item ">
+					<span class="mdc-list-item__text">Contact</span>
+				</li>
+			</ul>
 		</div>
 	</div>
+</div>
+<div class="mdc-layout-grid">
+	<div class="mdc-layout-grid__inner sec4">
+		<div class="mdc-layout-grid__cell--span-2"></div>
+		<div class="mdc-layout-grid__cell--span-8">
+			<section class="search">
+				<center><input type="text" name="search" placeholder="Where would you like to go?">
+					<button class="mdc-button sign1" style="padding: 11px;border: 1px;border-radius: 4px;">
+						<span class="mdc-button__label">Let's Go</span>
+					</button>
+				</center>
+			</section>
+			<div class="mdc-layout-grid__cell--span-2"></div>
+		</div>
+	</div>
+</div>
+<div class="bgimg">
+	<div class="content">
+		<div class="mdc-layout-grid">
+			<div class="mdc-layout-grid__inner">
+				<div class="mdc-layout-grid__cell--span-1">
+				</div>
+				<div class="mdc-layout-grid__cell--span-4" style="margin-top: 89px;
+				margin-left: 200px;">
+				<h1 class="mdc-typography--headline4" style="font-family: 'work_sansblack';">Summer Offers</h1>
+				<p class="mdc-typography--subtitle2">Lorem ipsum dolor sit amet, ex dicam definitiones cum. Falli decore quaeque eu est. Has ad salutatus deseruisse, sit fuisset democritum delicatissimi id. Id probo veniam honestatis vel. Mel modus imperdiet gubergren in, eam at inani doctus repudiandae. Ad per eros solum appetere.</p>
+			</div>
+			<div class="mdc-layout-grid__cell--span-7">
+			</div>
+		</div>
+	</div>
+</div>
 </div>
 
 <div class="mdc-layout-grid">
@@ -126,7 +215,7 @@
 		</div>
 		<div class="mdc-layout-grid__cell--span-2">
 			<div class="head1">
-				<h2>Asia</h2>
+				<h2>ASIA</h2>
 
 			</div>
 			<div class="content1">
@@ -144,7 +233,7 @@
 		</div>
 		<div class="mdc-layout-grid__cell--span-2">
 			<div class="head2">
-				<h2>Asia</h2>
+				<h2>AMERICAS</h2>
 
 			</div>
 			<div class="content2">
@@ -160,7 +249,7 @@
 		</div>
 		<div class="mdc-layout-grid__cell--span-2">
 			<div class="head3">
-				<h2>Asia</h2>
+				<h2>EUROPE</h2>
 
 			</div>
 			<div class="content3">
@@ -175,7 +264,7 @@
 		</div>
 		<div class="mdc-layout-grid__cell--span-2">
 			<div class="head4">
-				<h2>Asia</h2>
+				<h2>AFRICA</h2>
 
 			</div>
 			<div class="content4">
@@ -193,7 +282,7 @@
 		</div>
 		<div class="mdc-layout-grid__cell--span-2">
 			<div class="head5">
-				<h2>Asia</h2>
+				<h2>AUSTRALIA</h2>
 
 			</div>
 			<div class="content5">
@@ -356,9 +445,9 @@
 			<div class="mdc-layout-grid__cell--span-1">
 			</div>
 			<div class="mdc-layout-grid__cell--span-2">
-				<div class="mdc-image-list__image-aspect-container">
+				<!-- <div class="mdc-image-list__image-aspect-container">
 					<img class="mdc-image-list__image" src="images/tab.png" style="height: 643px;">
-				</div>
+				</div> -->
 			</div>
 			<div class="mdc-layout-grid__cell--span-9">
 				<div class="mdc-layout-grid tab_section">
@@ -499,8 +588,24 @@
 		</div>
 	</div>
 </div>
+<div class="mdc-layout-grid">
+	<div class="mdc-layout-grid__inner b1">
+		<div class="mdc-layout-grid__cell--span-2">
+		</div>
+		<div class="mdc-layout-grid__cell--span-8">
+			<img src="images/virat.jpg" class="img-circle img-review" alt="Cinque Terre" height="120" width="120">
+			<body class="mdc-typography">
+				<h3 class="mdc-typography--headline5 allheader" style="color:#d31223;">Virat Kohli</h3>
+				<p>CAPTAIN, INDIAN CRICKET TEAM</p>
+				<p>Virat Kohli was born on 5 November 1988 in Delhi into a Punjabi Hindu family. His father, Prem Kohli, worked as a criminal lawyer and his mother, Saroj Kohli, is a housewife. He has an older brother, Vikas, and an older sister, Bhavna. According to his family, when he was three-years old, Kohli would pick up a cricket bat, start swinging it and ask his father to bowl at him.</p>
+			</body>
+		</div>
+		<div class="mdc-layout-grid__cell--span-2">
+		</div>
+	</div>
+</div>
 
-<div class="mdc-layout-grid" style="margin-top: 80px;">
+<!-- <div class="mdc-layout-grid" style="margin-top: 80px;">
 	<div class="mdc-layout-grid__inner">
 		<div class="mdc-layout-grid__cell--span-3"></div>
 		<div class="mdc-layout-grid__cell--span-7">
@@ -543,8 +648,8 @@
 	<div class="mdc-layout-grid__cell--span-2"></div>
 </div>
 </div>
-
-<div class="mdc-layout-grid footer" style="margin-top: 435px;">
+-->
+<div class="mdc-layout-grid footer">
 	<div class="mdc-layout-grid__inner">
 		<div class="mdc-layout-grid__cell--span-2">
 
@@ -552,7 +657,7 @@
 		<div class="mdc-layout-grid__cell--span-3">
 
 			<p class="mdc-typography--headline6 footer_about">ABOUT US</p>
-			<p class="f_about_p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as </p>
+			<p class="f_about_p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum </p>
 			
 			<div class="mdc-layout-grid__inner">
 				<div class="mdc-layout-grid__cell--span-2">
@@ -655,7 +760,7 @@
 
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/style.js"></script>
 
 </body>

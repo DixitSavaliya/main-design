@@ -1,29 +1,68 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+const dialog=new mdc.dialog.MDCDialog.attachTo(document.querySelector('.mdc-dialog'));
+const dialog2=new mdc.dialog.MDCDialog.attachTo(document.querySelector('.dialog2'));
 
-function plusSlides(n) {
-	showSlides(slideIndex += n);
-}
+$('#sign').on('click',function(evt){
+	
+	dialog.open();
+})
+$('#canclebtn').on('click',function(evt){
+	
+	dialog.close();
+})
 
-function currentSlide(n) {
-	showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-	var i;
-	var slides = document.getElementsByClassName("mySlides");
-	var dots = document.getElementsByClassName("dot");
-	if (n > slides.length) {slideIndex = 1}    
-		if (n < 1) {slideIndex = slides.length}
-			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";  
-			}
-			for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			}
-			slides[slideIndex-1].style.display = "block";  
-			dots[slideIndex-1].className += " active";
+$(function(){
+
+
+	$("#submit").on("click", function(){
+
+		var EMAIL = document.getElementById("email").value;
+		var PASSWORD = document.getElementById("password").value;
+		var data={
+			email:EMAIL,
+			password:PASSWORD
 		}
+		console.log(data);
+   return false; 
+
+});
+});
+
+mdc.textField.MDCTextField.attachTo(document.querySelector('.email'));
+mdc.textField.MDCTextField.attachTo(document.querySelector('.password'));
+
+$('#reg').on('click',function(evt){
+	
+	dialog2.open();
+})
+$('#canclebtn').on('click',function(evt){
+	
+	dialog2.close();
+})
+
+$(function(){
 
 
+	$("#submitt").on("click", function(){
 
+		var Firstname = document.getElementById("firstname").value;
+		var Lastname = document.getElementById("lastname").value;
+		var EMAIL = document.getElementById("email1").value;
+		var PASSWORD = document.getElementById("password1").value;
+
+		var data={
+			firstname:Firstname,
+			lastname:Lastname,
+			email:EMAIL,
+			password:PASSWORD
+		}
+		console.log(data);
+   return false; 
+
+});
+});
+
+mdc.textField.MDCTextField.attachTo(document.querySelector('.email1'));
+mdc.textField.MDCTextField.attachTo(document.querySelector('.password1'));
+mdc.textField.MDCTextField.attachTo(document.querySelector('.firstname'));
+mdc.textField.MDCTextField.attachTo(document.querySelector('.lastname'));
